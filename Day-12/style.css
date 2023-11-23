@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainDiv {
+  /* border: 2px solid red; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.calculatorContainer {
+  /* border: 2px solid rgb(217, 29, 29); */
+  height: 60%;
+  width: 40%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 20px 20px 60px rgba(128, 128, 128, 0.695), -20px -20px 60px white;
+
+  border-radius: 0.6rem;
+}
+
+.screenContainer {
+  width: 100%;
+  height: 18%;
+  /* border: 2px solid blue; */
+  background: #ecf0f3;
+  border-radius: 0.6rem;
+  box-shadow: inset 8px 8px 8px #cbced1, inset 8px 8px 8px white;
+}
+
+.buttonContainer {
+  width: 100%;
+  height: 78%;
+  /* border: 2px solid rgb(13, 38, 225); */
+}
+
+.btnRow {
+  width: 100%;
+  /* border: 2px solid red; */
+  height: calc(100% / 5);
+  display: flex;
+}
+
+.btns {
+  height: 90%;
+  margin: 0.5rem;
+  width: calc(100% / 6);
+  border: none;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btnRow1 .btn1 {
+  background: #ff3399;
+  color: white;
+}
+
+.btnRow2 .btn6,
+.btnRow3 .btn6,
+.btnRow4 .btn6,
+.btnRow5 .btn6 {
+  background: #f4c93c;
+}
+
+.btnRow1 .btn6 {
+  color: white;
+  background: #33cc33;
+}
+.btnRow5 .btn5 {
+  color: white;
+  background: #33ccff;
+}
