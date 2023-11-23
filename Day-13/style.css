@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(0, 0, 0, 0.543); */
+}
+
+.mainContainer {
+  /* border: 2px solid red; */
+  height: 100vh;
+}
+
+header {
+  /* border: 2px solid green; */
+  height: 10%;
+  /*  */
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  /* border-radius: 29px; */
+  box-shadow: 35px 35px 68px 0px rgba(20, 23, 27, 0.5),
+    inset -9px -9px 16px 0px rgba(20, 23, 27, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+header form {
+  /* border: 2px solid hotpink; */
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 3.5rem;
+}
+
+header form input {
+  /* color: aliceblue; */
+  padding: 0.6rem 1rem;
+  width: 50ch;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  /*  */
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 29px;
+  box-shadow: 35px 35px 68px 0px rgba(20, 23, 27, 0.5),
+    inset -9px -9px 16px 0px rgba(20, 23, 27, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.mainContentContainer {
+  /* border: 2px solid rgb(7, 170, 75); */
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: space-evenly;
+}
+.movie {
+  /* border: 2px solid blue; */
+  height: 70%;
+  width: 22%;
+  margin-top: 2rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 29px;
+  box-shadow: 35px 35px 68px 0px rgba(20, 23, 27, 0.5),
+    inset -9px -9px 16px 0px rgba(20, 23, 27, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.movie img {
+  width: 90%;
+  /* border: 2px solid red; */
+  height: 80%;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.movieInfo {
+  width: 100%;
+  /* border: 2px solid red; */
+  height: 15%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
