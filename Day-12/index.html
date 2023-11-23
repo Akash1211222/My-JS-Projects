@@ -10,16 +10,20 @@
   <body>
     <div class="mainDiv">
       <div class="calculatorContainer">
-        <div class="screenContainer"></div>
+        <div class="screenContainer">
+          <input type="text" id="displayScreen" placeholder="0" />
+        </div>
 
         <div class="buttonContainer">
           <div class="btnRow btnRow1">
-            <button class="btns btn btn1">CE</button>
-            <button class="btns btn btn2">X!</button>
+            <button class="btns btn1" onclick="backspace()">CE</button>
+            <button class="btns btn2" onclick="fact() ">X!</button>
             <button class="btns btn btn3">(</button>
             <button class="btns btn btn4">)</button>
             <button class="btns btn btn5">%</button>
-            <button class="btns btn btn6">AC</button>
+            <button class="btns btn6" onclick="displayScreen.value = '' ">
+              AC
+            </button>
           </div>
           <div class="btnRow btnRow2">
             <button class="btns btn btn1">Sin</button>
@@ -30,7 +34,7 @@
             <button class="btns btn btn6">%</button>
           </div>
           <div class="btnRow btnRow3">
-            <button class="btns btn btn1">Cps</button>
+            <button class="btns btn btn1">Cos</button>
             <button class="btns btn btn2">Log</button>
             <button class="btns btn btn3">3</button>
             <button class="btns btn btn4">4</button>
@@ -50,11 +54,16 @@
             <button class="btns btn btn2">x^y</button>
             <button class="btns btn btn3">0</button>
             <button class="btns btn btn4">.</button>
-            <button class="btns btn btn5">=</button>
+            <button
+              class="btns btn5"
+              onclick="displayScreen.value=eval(displayScreen.value)">
+              =
+            </button>
             <button class="btns btn btn6">+</button>
           </div>
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
